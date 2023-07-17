@@ -1,9 +1,13 @@
-//
-//  Embeded.h
-//  Riff
-//
-//  Created by krisna pranav on 17/07/23.
-//
+/**
+ * @file Embeded.h
+ * @author Krisna Pranav
+ * @brief Embed Functionalities
+ * @version 1.0
+ * @date 2023-07-17
+ * 
+ * @copyright Copyright (c) 2023 RiffOS Developers, Krisna Pranav
+ * 
+ */
 
 #pragma once
 

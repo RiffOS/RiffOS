@@ -1,9 +1,13 @@
-//
-//  Traits.h
-//  Riff
-//
-//  Created by krisna pranav on 17/07/23.
-//
+/**
+ * @file Traits
+ * @author Krisna Pranav
+ * @brief Trait Functionality
+ * @version 1.0
+ * @date 2023-07-17
+ * 
+ * @copyright Copyright (c) 2023 RiffOS Developers, Krisna Pranav
+ * 
+ */
 
 #pragma once
 
