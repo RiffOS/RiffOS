@@ -1,11 +1,5 @@
 {
     "files.associations": {
-        "__config": "cpp",
-        "bitset": "cpp",
-        "ostream": "cpp",
-        "string": "cpp",
-        "string_view": "cpp",
-        "cstdint": "cpp",
-        "compare": "cpp"
+        "utility": "cpp"
     }
 }
