@@ -34,6 +34,7 @@
 		B11D638C2A652E4A00E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B11D638D2A652E6D00E3190F /* Embeded.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Embeded.h; sourceTree = "<group>"; };
 		B11D63912A65301F00E3190F /* Declare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Declare.h; sourceTree = "<group>"; };
+		B11D63932A65308A00E3190F /* Traits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Traits.h; sourceTree = "<group>"; };
 		B16ED1CE2A6423C0009D0260 /* Riff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Riff; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -152,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				B11D63912A65301F00E3190F /* Declare.h */,
+				B11D63932A65308A00E3190F /* Traits.h */,
 			);
 			path = LibMeta;
 			sourceTree = "<group>";
