@@ -101,7 +101,8 @@ namespace LibMeta
      * @tparam T 
      */
     template <typename T>
-    struct _RemoveVolatile<T volatile> {
+    struct _RemoveVolatile<T volatile> 
+    {
         using Type = T;
     };
 
