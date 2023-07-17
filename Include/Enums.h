@@ -91,84 +91,152 @@ namespace Include {
             return _value;
         }
 
+        /**
+         * @return E 
+         */
         operator E() const 
         {
             return _value;
         }
 
+        /**
+         * @return true 
+         * @return false 
+         */
         operator bool() const 
         {
             return _value != (E)0;
         }
 
+        /**
+         * @return Flags 
+         */
         Flags operator~() const 
         {
             return Flags(~_value);
         }
 
+        /**
+         * @param other 
+         * @return Flags 
+         */
         Flags operator|(Flags other) const 
         {
             return Flags(_value | other._value);
         }
 
+        /**
+         * @param other 
+         * @return Flags 
+         */
         Flags operator&(Flags other) const 
         {
             return Flags(_value & other._value);
         }
 
+        /**
+         * @param other 
+         * @return Flags 
+         */
         Flags operator^(Flags other) const 
         {
             return Flags(_value ^ other._value);
         }
-
+        
+        /**
+         * @param other 
+         * @return Flags& 
+         */
         Flags &operator|=(Flags other) 
         {
             _value |= other._value;
             return *this;
         }
 
+        /**
+         * @param other 
+         * @return Flags& 
+         */
         Flags &operator&=(Flags other) 
         {
             _value &= other._value;
             return *this;
         }
 
+        /**
+         * @param other 
+         * @return Flags& 
+         */
         Flags &operator^=(Flags other) 
         {
             _value ^= other._value;
             return *this;
         }
 
+        /**
+         * @return true 
+         * @return false 
+         */
         bool operator!() const 
         {
             return !_value;
         }
 
+        /**
+         * @param other 
+         * @return true 
+         * @return false 
+         */
         bool operator==(Flags other) const 
         {
             return _value == other._value;
         }
 
+        /**
+         * @param other 
+         * @return true 
+         * @return false 
+         */
         bool operator!=(Flags other) const 
         {
             return _value != other._value;
         }
 
+        /**
+         * @param other 
+         * @return true 
+         * @return false 
+         */
         bool operator<(Flags other) const 
         {
             return _value < other._value;
         }
 
+        /**
+         * @param other 
+         * @return true 
+         * @return false 
+         */
         bool operator>(Flags other) const 
         {
             return _value > other._value;
         }
 
+        /**
+         * @param other 
+         * @return true 
+         * @return false 
+         */
         bool operator<=(Flags other) const 
         {
             return _value <= other._value;
         }
 
+        /**
+         * @param other 
+         * @return true 
+         * @return false 
+         */
         bool operator>=(Flags other) const 
         {
             return _value >= other._value;
@@ -176,35 +244,43 @@ namespace Include {
     };
 
     #define FlagsEnum$(T)                              \
-        inline T operator~(T a) {                      \
+        inline T operator~(T a)                     \
+        {                                           \
             using U = ::LibMeta::UnderlyingType<T>; \
             return (T) ~(U)a;                          \
         }                                              \
-        inline T operator|(T a, T b) {                 \
+        inline T operator|(T a, T b)                    \
+        {                                                \
             using U = ::LibMeta::UnderlyingType<T>; \
             return (T)((U)a | (U)b);                   \
         }                                              \
-        inline T operator&(T a, T b) {                 \
+        inline T operator&(T a, T b)                \
+        {                                            \
             using U = ::LibMeta::UnderlyingType<T>; \
             return (T)((U)a & (U)b);                   \
         }                                              \
-        inline T operator^(T a, T b) {                 \
+        inline T operator^(T a, T b)                    \
+        {                                              \
             using U = ::LibMeta::UnderlyingType<T>; \
             return (T)((U)a ^ (U)b);                   \
         }                                              \
-        inline bool operator!(T a) {                   \
+        inline bool operator!(T a)                  \
+        {                                            \
             using U = ::LibMeta::UnderlyingType<T>; \
             return not(U) a;                           \
         }                                              \
-        inline T &operator|=(T &a, T b) {              \
+        inline T &operator|=(T &a, T b)                 \
+        {                                              \
             using U = ::LibMeta::UnderlyingType<T>; \
             return (T &)((U &)a |= (U)b);              \
         }                                              \
-        inline T &operator&=(T &a, T b) {              \
+        inline T &operator&=(T &a, T b)                 \
+        {                                               \
             using U = ::LibMeta::UnderlyingType<T>; \
             return (T &)((U &)a &= (U)b);              \
         }                                              \
-        inline T &operator^=(T &a, T b) {              \
+        inline T &operator^=(T &a, T b)             \
+        {                                           \
             using U = ::LibMeta::UnderlyingType<T>; \
             return (T &)((U &)a ^= (U)b);              \
         }
