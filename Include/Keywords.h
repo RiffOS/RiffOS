@@ -13,7 +13,7 @@
 
 #include <Include/Bool.h>
 
-namespace Karm 
+namespace Include 
 {
     /// @brief Move
     struct Move {};
