@@ -14,38 +14,70 @@
 #include <stddef.h>
 #include <stdint.h>
 
-namespace Include
+namespace Include 
 {
-    // Size
+
+    /**
+     * @brief Sizes
+     * 
+     */
     using usize = size_t;
     using isize = ptrdiff_t;
 
-    // UInts
+    /**
+     * @brief UInt's
+     * 
+     */
     using u8 = uint8_t;
     using u16 = uint16_t;
     using u32 = uint32_t;
     using u64 = uint64_t;
     using u128 = __uint128_t;
 
-    // Ints
+    /**
+     * @brief Int's
+     * 
+     */
     using i8 = int8_t;
     using i16 = int16_t;
     using i32 = int32_t;
     using i64 = int64_t;
     using i128 = __int128_t;
 
-    // Float Values
+    /**
+     * @brief FLOAT Values
+     * 
+     */
     using f32 = float;
     using f64 = double;
     using f128 = long double;
 
     /**
+     * @brief ROL
+     * 
      * @param x 
      * @param n 
      * @return constexpr auto 
      */
-    inline constexpr auto rol(auto x, auto n)
+    inline constexpr auto rol(auto x, auto n) 
     {
         return (x << n) | (x >> (sizeof(x) * 8 - n));
     }
+
+    /**
+     * @brief ROR
+     * 
+     * @param x 
+     * @param n 
+     * @return constexpr auto 
+     */
+    inline constexpr auto ror(auto x, auto n) 
+    {
+        return (x >> n) | (x << (sizeof(x) * 8 - n));
+    }
+
 }
+
+// Getting THe Mods.
+using Include::ror;
+using Include::rol;
