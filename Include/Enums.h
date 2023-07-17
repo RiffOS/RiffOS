@@ -123,40 +123,41 @@ namespace Include {
 
     #define FlagsEnum$(T)                              \
         inline T operator~(T a) {                      \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return (T) ~(U)a;                          \
         }                                              \
         inline T operator|(T a, T b) {                 \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return (T)((U)a | (U)b);                   \
         }                                              \
         inline T operator&(T a, T b) {                 \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return (T)((U)a & (U)b);                   \
         }                                              \
         inline T operator^(T a, T b) {                 \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return (T)((U)a ^ (U)b);                   \
         }                                              \
         inline bool operator!(T a) {                   \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return not(U) a;                           \
         }                                              \
         inline T &operator|=(T &a, T b) {              \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return (T &)((U &)a |= (U)b);              \
         }                                              \
         inline T &operator&=(T &a, T b) {              \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return (T &)((U &)a &= (U)b);              \
         }                                              \
         inline T &operator^=(T &a, T b) {              \
-            using U = ::Karm::Meta::UnderlyingType<T>; \
+            using U = ::LibMeta::UnderlyingType<T>; \
             return (T &)((U &)a ^= (U)b);              \
         }
 
-    template <Meta::Enum E, typename U = Meta::UnderlyingType<E>>
-    U toUnderlyingType(E value) {
+    template <LibMeta::Enum E, typename U = LibMeta::UnderlyingType<E>>
+    U toUnderlyingType(E value) 
+    {
         return (U)value;
     };
 
