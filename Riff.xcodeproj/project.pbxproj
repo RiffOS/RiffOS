@@ -19,19 +19,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B11D63752A652E4800E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D63772A652E4800E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D637A2A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D637B2A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D637D2A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D637F2A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D63812A652E4900E3190F /* CODING_STYLE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CODING_STYLE.md; sourceTree = "<group>"; };
+		B11D63832A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D63852A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D63862A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D63882A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D638A2A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D638C2A652E4A00E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11D638D2A652E6D00E3190F /* Embeded.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Embeded.h; sourceTree = "<group>"; };
 		B16ED1CE2A6423C0009D0260 /* Riff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Riff; sourceTree = BUILT_PRODUCTS_DIR; };
-		B16ED1D92A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1DB2A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1DD2A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1DF2A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1E22A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1E32A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1E52A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1E72A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1E92A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1EB2A6423E1009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1ED2A6423E2009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B16ED1EE2A6423E2009D0260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,19 +47,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B11D63742A652E4800E3190F /* CoreSys */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63752A652E4800E3190F /* README.md */,
+			);
+			path = CoreSys;
+			sourceTree = "<group>";
+		};
+		B11D63762A652E4800E3190F /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63772A652E4800E3190F /* README.md */,
+				B11D638D2A652E6D00E3190F /* Embeded.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		B11D63782A652E4900E3190F /* Userland */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63792A652E4900E3190F /* Applications */,
+				B11D637B2A652E4900E3190F /* README.md */,
+				B11D637C2A652E4900E3190F /* Utilities */,
+			);
+			path = Userland;
+			sourceTree = "<group>";
+		};
+		B11D63792A652E4900E3190F /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				B11D637A2A652E4900E3190F /* README.md */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		B11D637C2A652E4900E3190F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B11D637D2A652E4900E3190F /* README.md */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B11D637E2A652E4900E3190F /* SystemService */ = {
+			isa = PBXGroup;
+			children = (
+				B11D637F2A652E4900E3190F /* README.md */,
+			);
+			path = SystemService;
+			sourceTree = "<group>";
+		};
+		B11D63802A652E4900E3190F /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63812A652E4900E3190F /* CODING_STYLE.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		B11D63822A652E4900E3190F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63832A652E4900E3190F /* README.md */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B11D63842A652E4900E3190F /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63852A652E4900E3190F /* README.md */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		B11D63872A652E4900E3190F /* Kernel */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63882A652E4900E3190F /* README.md */,
+			);
+			path = Kernel;
+			sourceTree = "<group>";
+		};
+		B11D63892A652E4900E3190F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B11D638A2A652E4900E3190F /* README.md */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B11D638B2A652E4A00E3190F /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B11D638C2A652E4A00E3190F /* README.md */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		B16ED1C52A6423C0009D0260 = {
 			isa = PBXGroup;
 			children = (
-				B16ED1EC2A6423E2009D0260 /* Base */,
-				B16ED1E62A6423E1009D0260 /* CoreSys */,
-				B16ED1DA2A6423E1009D0260 /* Include */,
-				B16ED1DC2A6423E1009D0260 /* Interface */,
-				B16ED1EA2A6423E1009D0260 /* Kernel */,
-				B16ED1DE2A6423E1009D0260 /* Libraries */,
-				B16ED1E82A6423E1009D0260 /* Meta */,
-				B16ED1EE2A6423E2009D0260 /* README.md */,
-				B16ED1D82A6423E1009D0260 /* SystemService */,
-				B16ED1E02A6423E1009D0260 /* Userland */,
+				B11D63822A652E4900E3190F /* Base */,
+				B11D63742A652E4800E3190F /* CoreSys */,
+				B11D63802A652E4900E3190F /* Documentation */,
+				B11D63762A652E4800E3190F /* Include */,
+				B11D638B2A652E4A00E3190F /* Interface */,
+				B11D63872A652E4900E3190F /* Kernel */,
+				B11D63892A652E4900E3190F /* Libraries */,
+				B11D63842A652E4900E3190F /* Meta */,
+				B11D63862A652E4900E3190F /* README.md */,
+				B11D637E2A652E4900E3190F /* SystemService */,
+				B11D63782A652E4900E3190F /* Userland */,
 				B16ED1CF2A6423C0009D0260 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,96 +170,6 @@
 				B16ED1CE2A6423C0009D0260 /* Riff */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B16ED1D82A6423E1009D0260 /* SystemService */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1D92A6423E1009D0260 /* README.md */,
-			);
-			path = SystemService;
-			sourceTree = "<group>";
-		};
-		B16ED1DA2A6423E1009D0260 /* Include */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1DB2A6423E1009D0260 /* README.md */,
-			);
-			path = Include;
-			sourceTree = "<group>";
-		};
-		B16ED1DC2A6423E1009D0260 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1DD2A6423E1009D0260 /* README.md */,
-			);
-			path = Interface;
-			sourceTree = "<group>";
-		};
-		B16ED1DE2A6423E1009D0260 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1DF2A6423E1009D0260 /* README.md */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		B16ED1E02A6423E1009D0260 /* Userland */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1E12A6423E1009D0260 /* Applications */,
-				B16ED1E32A6423E1009D0260 /* README.md */,
-				B16ED1E42A6423E1009D0260 /* Utilities */,
-			);
-			path = Userland;
-			sourceTree = "<group>";
-		};
-		B16ED1E12A6423E1009D0260 /* Applications */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1E22A6423E1009D0260 /* README.md */,
-			);
-			path = Applications;
-			sourceTree = "<group>";
-		};
-		B16ED1E42A6423E1009D0260 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1E52A6423E1009D0260 /* README.md */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		B16ED1E62A6423E1009D0260 /* CoreSys */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1E72A6423E1009D0260 /* README.md */,
-			);
-			path = CoreSys;
-			sourceTree = "<group>";
-		};
-		B16ED1E82A6423E1009D0260 /* Meta */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1E92A6423E1009D0260 /* README.md */,
-			);
-			path = Meta;
-			sourceTree = "<group>";
-		};
-		B16ED1EA2A6423E1009D0260 /* Kernel */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1EB2A6423E1009D0260 /* README.md */,
-			);
-			path = Kernel;
-			sourceTree = "<group>";
-		};
-		B16ED1EC2A6423E2009D0260 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B16ED1ED2A6423E2009D0260 /* README.md */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
