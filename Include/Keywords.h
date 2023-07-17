@@ -9,26 +9,42 @@
  * 
  */
 
-#pragma once 
+#pragma once
 
 #include <Include/Bool.h>
 
-namespace Include
+namespace Karm 
 {
+    /// @brief Move
     struct Move {};
-
+    /// @brief Re-Assigne
     constexpr inline auto MOVE = Move{};
 
+    /// @brief COPY
     struct Copy {};
-    
+    /// @brief Re-Assign
     constexpr inline auto COPY = Copy{};
 
+    /// @brief WRAP[Take Copy Of Move]
     struct Wrap {};
-
+    /// @brief Re-Assign
     constexpr inline auto WRAP = Wrap{};
 
-    struct None {};
+    /// @brief  None[Empty-Object]
+    struct None {
+        constexpr None() {}
 
+        /**
+         * @return true 
+         * @return false 
+         */
+        explicit operator bool() const 
+        {
+            return false;
+        }
+    };
+
+    /// @brief NONE[Re-Assigne]
     constexpr inline auto NONE = None{};
 
     /**
@@ -37,9 +53,10 @@ namespace Include
      * @return true 
      * @return false 
      */
-    template<typename T>
+    template <typename T>
     bool operator==(None, T *ptr) 
     {
         return ptr == nullptr;
     }
+
 }
