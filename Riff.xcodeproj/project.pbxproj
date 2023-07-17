@@ -33,6 +33,7 @@
 		B11D638A2A652E4900E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B11D638C2A652E4A00E3190F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B11D638D2A652E6D00E3190F /* Embeded.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Embeded.h; sourceTree = "<group>"; };
+		B11D63912A65301F00E3190F /* Declare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Declare.h; sourceTree = "<group>"; };
 		B16ED1CE2A6423C0009D0260 /* Riff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Riff; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +134,7 @@
 		B11D63892A652E4900E3190F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B11D63902A65301600E3190F /* LibMeta */,
 				B11D638A2A652E4900E3190F /* README.md */,
 			);
 			path = Libraries;
@@ -144,6 +146,14 @@
 				B11D638C2A652E4A00E3190F /* README.md */,
 			);
 			path = Interface;
+			sourceTree = "<group>";
+		};
+		B11D63902A65301600E3190F /* LibMeta */ = {
+			isa = PBXGroup;
+			children = (
+				B11D63912A65301F00E3190F /* Declare.h */,
+			);
+			path = LibMeta;
 			sourceTree = "<group>";
 		};
 		B16ED1C52A6423C0009D0260 = {
