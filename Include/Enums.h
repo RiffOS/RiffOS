@@ -22,101 +22,155 @@ namespace Include {
 
         Flags() = default;
 
-        Flags(E value)
-            : _value(value) {}
+        /**
+         * @brief Construct a new Flags object
+         * 
+         * @param value 
+         */
+        Flags(E value) : _value(value) {}
 
-        bool has(E value) const {
+        /**
+         * @param value 
+         * @return true 
+         * @return false 
+         */
+        bool has(E value) const 
+        {
             return (_value & value) == value;
         }
 
-        void set(E value) {
+        /**
+         * @param value 
+         */
+        void set(E value) 
+        {
             _value |= value;
         }
 
-        void unset(E value) {
+        /**
+         * @param value 
+         */
+        void unset(E value) 
+        {
             _value &= ~value;
         }
 
-        void toggle(E value) {
+        /**
+         * @param value 
+         */
+        void toggle(E value) 
+        {
             _value ^= value;
         }
 
-        void clear() {
+        /**
+         * @brief *void clear
+         * 
+         */
+        void clear() 
+        {
             _value = {};
         }
 
-        bool empty() const {
+        /**
+         * @brief empty
+         * 
+         * @return true 
+         * @return false 
+         */
+        bool empty() const 
+        {
             return _value == (E)0;
         }
 
-        E val() const {
+        /**
+         * @return E 
+         */
+        E val() const 
+        {
             return _value;
         }
 
-        operator E() const {
+        operator E() const 
+        {
             return _value;
         }
 
-        operator bool() const {
+        operator bool() const 
+        {
             return _value != (E)0;
         }
 
-        Flags operator~() const {
+        Flags operator~() const 
+        {
             return Flags(~_value);
         }
 
-        Flags operator|(Flags other) const {
+        Flags operator|(Flags other) const 
+        {
             return Flags(_value | other._value);
         }
 
-        Flags operator&(Flags other) const {
+        Flags operator&(Flags other) const 
+        {
             return Flags(_value & other._value);
         }
 
-        Flags operator^(Flags other) const {
+        Flags operator^(Flags other) const 
+        {
             return Flags(_value ^ other._value);
         }
 
-        Flags &operator|=(Flags other) {
+        Flags &operator|=(Flags other) 
+        {
             _value |= other._value;
             return *this;
         }
 
-        Flags &operator&=(Flags other) {
+        Flags &operator&=(Flags other) 
+        {
             _value &= other._value;
             return *this;
         }
 
-        Flags &operator^=(Flags other) {
+        Flags &operator^=(Flags other) 
+        {
             _value ^= other._value;
             return *this;
         }
 
-        bool operator!() const {
+        bool operator!() const 
+        {
             return !_value;
         }
 
-        bool operator==(Flags other) const {
+        bool operator==(Flags other) const 
+        {
             return _value == other._value;
         }
 
-        bool operator!=(Flags other) const {
+        bool operator!=(Flags other) const 
+        {
             return _value != other._value;
         }
 
-        bool operator<(Flags other) const {
+        bool operator<(Flags other) const 
+        {
             return _value < other._value;
         }
 
-        bool operator>(Flags other) const {
+        bool operator>(Flags other) const 
+        {
             return _value > other._value;
         }
 
-        bool operator<=(Flags other) const {
+        bool operator<=(Flags other) const 
+        {
             return _value <= other._value;
         }
 
-        bool operator>=(Flags other) const {
+        bool operator>=(Flags other) const 
+        {
             return _value >= other._value;
         }
     };
@@ -155,6 +209,12 @@ namespace Include {
             return (T &)((U &)a ^= (U)b);              \
         }
 
+    /**
+     * @tparam E 
+     * @tparam U 
+     * @param value 
+     * @return U 
+     */
     template <LibMeta::Enum E, typename U = LibMeta::UnderlyingType<E>>
     U toUnderlyingType(E value) 
     {
