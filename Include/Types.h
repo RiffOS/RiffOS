@@ -33,4 +33,19 @@ namespace Include
     using i32 = int32_t;
     using i64 = int64_t;
     using i128 = __int128_t;
+
+    // Float Values
+    using f32 = float;
+    using f64 = double;
+    using f128 = long double;
+
+    /**
+     * @param x 
+     * @param n 
+     * @return constexpr auto 
+     */
+    inline constexpr auto rol(auto x, auto n)
+    {
+        return (x << n) | (x >> (sizeof(x) * 8 - n));
+    }
 }
