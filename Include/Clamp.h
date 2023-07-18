@@ -11,20 +11,20 @@
 
 #pragma once
 
-#include "Order.h"
 #include "RiffStd.h"
+#include "Order.h"
 #include "Macros.h"
 
-
 namespace Include
-{     
+{
+
     /**
      * @param value 
      * @return ALWAYS_INLINE constexpr 
      */
-    ALWAYS_INLINE constexpr auto max(auto value)
-    {
-        return value;
+    ALWAYS_INLINE constexpr auto max(auto value) 
+    { 
+        return value; 
     }
 
     /**
@@ -32,27 +32,50 @@ namespace Include
      * @param rest 
      * @return ALWAYS_INLINE constexpr 
      */
-    ALWAYS_INLINE constexpr auto max(auto first, auto... rest)
+    ALWAYS_INLINE constexpr auto max(auto first, auto... rest) 
     {
         auto rhs = max(rest...);
-        return OrderP::gt(first, rhs) ? first : rhs;
+        return Orderp::gt(first, rhs) ? first : rhs;
     }
 
     /**
      * @param value 
      * @return ALWAYS_INLINE constexpr 
      */
-    ALWAYS_INLINE constexpr auto min(auto value)
+    ALWAYS_INLINE constexpr auto min(auto value) 
+    { 
+        return value; 
+    }
+
+    /**
+     * @param first 
+     * @param rest 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    ALWAYS_INLINE constexpr auto min(auto first, auto... rest) 
     {
-        return value;
+        auto rhs = min(rest...);
+        return Orderp::lt(first, rhs) ? first : rhs;
+    }
+
+    /**
+     * @param value 
+     * @param min 
+     * @param max 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    ALWAYS_INLINE constexpr auto clamp(auto value, auto min, auto max) 
+    {
+        return Orderp::lt(value, min) ? min : Orderp::gt(value, max) ? max : value;
     }
 
     /**
      * @param value 
      * @return ALWAYS_INLINE constexpr 
      */
-    ALWAYS_INLINE constexpr auto clamp01(auto value)
+    ALWAYS_INLINE constexpr auto clamp01(auto value) 
     {
         return clamp(value, 0, 1);
     }
-}
+
+} 
