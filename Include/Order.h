@@ -195,87 +195,88 @@ namespace Include
         }
     }
 
-    namespace OrderP 
+
+} 
+
+namespace OrderP 
+{
+
+    /**
+     * @tparam Lhs 
+     * @tparam Rhs 
+     * @param lhs 
+     * @param rhs 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    template <typename Lhs, typename Rhs>
+    ALWAYS_INLINE constexpr bool eq(Lhs const &lhs, Rhs const &rhs) 
     {
+        return cmp(lhs, rhs).isEq();
+    }
 
-        /**
-         * @tparam Lhs 
-         * @tparam Rhs 
-         * @param lhs 
-         * @param rhs 
-         * @return ALWAYS_INLINE constexpr 
-         */
-        template <typename Lhs, typename Rhs>
-        ALWAYS_INLINE constexpr bool eq(Lhs const &lhs, Rhs const &rhs) 
-        {
-            return cmp(lhs, rhs).isEq();
-        }
+    /**
+     * @tparam Lhs 
+     * @tparam Rhs 
+     * @param lhs 
+     * @param rhs 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    template <typename Lhs, typename Rhs>
+    ALWAYS_INLINE constexpr bool ne(Lhs const &lhs, Rhs const &rhs) 
+    {
+        return cmp(lhs, rhs).isNe();
+    }
 
-        /**
-         * @tparam Lhs 
-         * @tparam Rhs 
-         * @param lhs 
-         * @param rhs 
-         * @return ALWAYS_INLINE constexpr 
-         */
-        template <typename Lhs, typename Rhs>
-        ALWAYS_INLINE constexpr bool ne(Lhs const &lhs, Rhs const &rhs) 
-        {
-            return cmp(lhs, rhs).isNe();
-        }
+    /**
+     * @tparam Lhs 
+     * @tparam Rhs 
+     * @param lhs 
+     * @param rhs 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    template <typename Lhs, typename Rhs>
+    ALWAYS_INLINE constexpr bool lt(Lhs const &lhs, Rhs const &rhs) 
+    {
+        return cmp(lhs, rhs).isLt();
+    }
 
-        /**
-         * @tparam Lhs 
-         * @tparam Rhs 
-         * @param lhs 
-         * @param rhs 
-         * @return ALWAYS_INLINE constexpr 
-         */
-        template <typename Lhs, typename Rhs>
-        ALWAYS_INLINE constexpr bool lt(Lhs const &lhs, Rhs const &rhs) 
-        {
-            return cmp(lhs, rhs).isLt();
-        }
+    /**
+     * @tparam Lhs 
+     * @tparam Rhs 
+     * @param lhs 
+     * @param rhs 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    template <typename Lhs, typename Rhs>
+    ALWAYS_INLINE constexpr bool gt(Lhs const &lhs, Rhs const &rhs) 
+    {
+        return cmp(lhs, rhs).isGt();
+    }
 
-        /**
-         * @tparam Lhs 
-         * @tparam Rhs 
-         * @param lhs 
-         * @param rhs 
-         * @return ALWAYS_INLINE constexpr 
-         */
-        template <typename Lhs, typename Rhs>
-        ALWAYS_INLINE constexpr bool gt(Lhs const &lhs, Rhs const &rhs) 
-        {
-            return cmp(lhs, rhs).isGt();
-        }
+    /**
+     * @tparam Lhs 
+     * @tparam Rhs 
+     * @param lhs 
+     * @param rhs 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    template <typename Lhs, typename Rhs>
+    ALWAYS_INLINE constexpr bool gteq(Lhs const &lhs, Rhs const &rhs) 
+    {
+        return cmp(lhs, rhs).isGtEq();
+    }
 
-        /**
-         * @tparam Lhs 
-         * @tparam Rhs 
-         * @param lhs 
-         * @param rhs 
-         * @return ALWAYS_INLINE constexpr 
-         */
-        template <typename Lhs, typename Rhs>
-        ALWAYS_INLINE constexpr bool gteq(Lhs const &lhs, Rhs const &rhs) 
-        {
-            return cmp(lhs, rhs).isGtEq();
-        }
-
-        /**
-         * @tparam Lhs 
-         * @tparam Rhs 
-         * @param lhs 
-         * @param rhs 
-         * @return ALWAYS_INLINE constexpr 
-         */
-        template <typename Lhs, typename Rhs>
-        ALWAYS_INLINE constexpr bool lteq(Lhs const &lhs, Rhs const &rhs) 
-        {
-            return cmp(lhs, rhs).isLtEq();
-        }
-
-    } 
+    /**
+     * @tparam Lhs 
+     * @tparam Rhs 
+     * @param lhs 
+     * @param rhs 
+     * @return ALWAYS_INLINE constexpr 
+     */
+    template <typename Lhs, typename Rhs>
+    ALWAYS_INLINE constexpr bool lteq(Lhs const &lhs, Rhs const &rhs) 
+    {
+        return cmp(lhs, rhs).isLtEq();
+    }
 
 } 
