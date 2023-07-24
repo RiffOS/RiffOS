@@ -15,61 +15,103 @@
 #include <Include/RiffStd.h>
 #include "Traits.h"
 
-namespace RiffMeta
+namespace RiffMeta 
 {
-    using Id = usize;
 
+    using Id = usize;
+    
+    /**
+     * @tparam T 
+     * @return Id 
+     */
     template <typename T>
-    static Id idOf()
+    static Id idOf() 
     {
         return reinterpret_cast<Id>(__PRETTY_FUNCTION__ + 41);
-    };
+    }
 
+    /**
+     * @tparam T 
+     * @return char const* 
+     */
     template <typename T>
-    static char const *nameOf()
+    static char const *nameOf() 
     {
         return __PRETTY_FUNCTION__ + 40;
     }
-
+    
+    /**
+     * @tparam __noType 
+     */
     template <typename T = struct __noType>
     struct Type;
 
+    /**
+     * @tparam T 
+     */
     template <typename T>
-    struct Type
+    struct Type 
     {
         using TYPE = T;
 
+        /**
+         * @return constexpr Id 
+         */
         constexpr static Id id() 
         {
             return idOf<T>();
         }
 
+        /**
+         * @return constexpr char const* 
+         */
         constexpr static char const *name() 
         {
             return nameOf<T>();
         }
     };
 
-    template<>
-    struct Type<struct __noType>
+    /**
+     * @tparam 
+     */
+    template <>
+    struct Type<struct __noType> 
     {
         Id _id;
         char const *_name;
 
-        constexpr Id id() const
+        /**
+         * @tparam T 
+         */
+        template <typename T>
+        constexpr Type(Type<T> type)
+            : _id(type.id()), _name(type.name()) {}
+
+        /**
+         * @return constexpr Id 
+         */
+        constexpr Id id() const 
         {
             return _id;
         }
 
-        constexpr char const *name() const
+        /**
+         * @return constexpr char const* 
+         */
+        constexpr char const *name() const 
         {
             return _name;
         }
     };
 
+    /**
+     * @tparam T 
+     * @return Type<T> 
+     */
     template <typename T>
-    Type<T> typeOf()
+    Type<T> typeOf() 
     {
         return Type<T>{};
     }
+
 }
