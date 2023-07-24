@@ -9,14 +9,16 @@
  * 
  */
 
-#pragma once 
+#pragma once
 
-#include <Include/RiffStd.h>
+
 #include "CVRP.h"
 #include "Declare.h"
+#include <Include/RiffStd.h>
 
-namespace RiffMeta
+namespace RiffMeta 
 {
+
     /**
      * @tparam ypename 
      */
@@ -48,4 +50,21 @@ namespace RiffMeta
      */
     template <typename T>
     concept FuncPtr = Ptr<T> and RiffMeta::Func<RemovePtr<T>>;
+
+    /**
+     * @tparam U 
+     * @tparam Args 
+     */
+    template <typename U, typename... Args>
+    using Ret = decltype(RiffMeta::declval<U>()(std::forward<Args>(RiffMeta::declval<Args>())...));
+
+    /**
+     * @tparam T 
+     * @tparam Args 
+     */
+    template <typename T, typename... Args>
+    concept Callable = requires(T f) {
+                        f(declval<Args>()...);
+                    };
+
 }
