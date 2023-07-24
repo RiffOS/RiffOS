@@ -11,7 +11,7 @@
 
 #pragma once
 
-#include <LibMeta/Traits.h>
+#include <RiffMeta/Traits.h>
 
 namespace Include 
 {
@@ -28,13 +28,13 @@ namespace Include
          */
         Bool() = delete;
 
-        constexpr Bool(LibMeta::Boolean auto value) : _val(value) {}
+        constexpr Bool(RiffMeta::Boolean auto value) : _val(value) {}
 
         /**
          * @param value 
          * @return constexpr Bool& 
          */
-        constexpr Bool &operator=(LibMeta::Boolean auto value) 
+        constexpr Bool &operator=(RiffMeta::Boolean auto value) 
         {
             _val = value;
             return *this;
@@ -75,7 +75,7 @@ namespace Include
      * @return true 
      * @return false 
      */
-    constexpr bool operator==(Bool a, LibMeta::Boolean auto b) 
+    constexpr bool operator==(Bool a, RiffMeta::Boolean auto b) 
     {
         return static_cast<bool>(a) == static_cast<bool>(b);
     }
@@ -86,7 +86,7 @@ namespace Include
      * @return true 
      * @return false 
      */
-    constexpr bool operator==(LibMeta::Boolean auto a, Bool &b) 
+    constexpr bool operator==(RiffMeta::Boolean auto a, Bool &b) 
     {
         return static_cast<bool>(a) == static_cast<bool>(b);
     }
@@ -108,7 +108,7 @@ namespace Include
      * @return true 
      * @return false 
      */
-    constexpr bool operator!=(Bool a, LibMeta::Boolean auto b) 
+    constexpr bool operator!=(Bool a, RiffMeta::Boolean auto b) 
     {
         return static_cast<bool>(a) != static_cast<bool>(b);
     }
@@ -119,7 +119,7 @@ namespace Include
      * @return true 
      * @return false 
      */
-    constexpr bool operator!=(LibMeta::Boolean auto a, Bool b) 
+    constexpr bool operator!=(RiffMeta::Boolean auto a, Bool b) 
     {
         return static_cast<bool>(a) != static_cast<bool>(b);
     }

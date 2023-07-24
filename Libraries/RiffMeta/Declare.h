@@ -11,7 +11,7 @@
 
 #pragma once
 
-namespace LibMeta
+namespace RiffMeta
 {
     /**
      * @tparam T 

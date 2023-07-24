@@ -11,12 +11,12 @@
 
 #pragma once
 
-#include <LibMeta/Traits.h>
+#include <RiffMeta/Traits.h>
 #include "RiffStd.h"
 
 namespace Include {
 
-    template <LibMeta::Enum E>
+    template <RiffMeta::Enum E>
     struct Flags {
         E _value = {};
 
@@ -246,42 +246,42 @@ namespace Include {
     #define FlagsEnum$(T)                              \
         inline T operator~(T a)                     \
         {                                           \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return (T) ~(U)a;                          \
         }                                              \
         inline T operator|(T a, T b)                    \
         {                                                \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return (T)((U)a | (U)b);                   \
         }                                              \
         inline T operator&(T a, T b)                \
         {                                            \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return (T)((U)a & (U)b);                   \
         }                                              \
         inline T operator^(T a, T b)                    \
         {                                              \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return (T)((U)a ^ (U)b);                   \
         }                                              \
         inline bool operator!(T a)                  \
         {                                            \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return not(U) a;                           \
         }                                              \
         inline T &operator|=(T &a, T b)                 \
         {                                              \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return (T &)((U &)a |= (U)b);              \
         }                                              \
         inline T &operator&=(T &a, T b)                 \
         {                                               \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return (T &)((U &)a &= (U)b);              \
         }                                              \
         inline T &operator^=(T &a, T b)             \
         {                                           \
-            using U = ::LibMeta::UnderlyingType<T>; \
+            using U = ::RiffMeta::UnderlyingType<T>; \
             return (T &)((U &)a ^= (U)b);              \
         }
 
@@ -291,7 +291,7 @@ namespace Include {
      * @param value 
      * @return U 
      */
-    template <LibMeta::Enum E, typename U = LibMeta::UnderlyingType<E>>
+    template <RiffMeta::Enum E, typename U = RiffMeta::UnderlyingType<E>>
     U toUnderlyingType(E value) 
     {
         return (U)value;

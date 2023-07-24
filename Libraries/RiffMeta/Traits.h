@@ -11,14 +11,14 @@
 
 #pragma once
 
-#include <Libraries/LibMeta/Declare.h>
+#include <Libraries/RiffMeta/Declare.h>
 
-namespace LibMeta
+namespace RiffMeta
 {
     struct Bool;
 }
 
-namespace LibMeta
+namespace RiffMeta
 {
 
     /**
@@ -61,7 +61,7 @@ namespace LibMeta
      * @tparam  
      */
     template <>
-    inline constexpr bool _Boolean<LibMeta::Bool> = true;
+    inline constexpr bool _Boolean<RiffMeta::Bool> = true;
 
     /**
      * @tparam T 

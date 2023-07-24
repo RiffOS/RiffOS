@@ -11,7 +11,7 @@
 
 #pragma once
 
-namespace LibMeta
+namespace RiffMeta
 {
     template<bool condition, typename TTrue, typename TFalse>
     struct _Condition

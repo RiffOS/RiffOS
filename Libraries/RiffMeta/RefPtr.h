@@ -14,7 +14,7 @@
 
 #include "Conditions.h"
 
-namespace LibMeta 
+namespace RiffMeta 
 {
 
     /// Mark :- Constants

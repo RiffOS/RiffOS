@@ -135,7 +135,7 @@
 		B11D63892A652E4900E3190F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				B11D63902A65301600E3190F /* LibMeta */,
+				B11D63902A65301600E3190F /* RiffMeta */,
 				B11D638A2A652E4900E3190F /* README.md */,
 			);
 			path = Libraries;
@@ -149,13 +149,13 @@
 			path = Interface;
 			sourceTree = "<group>";
 		};
-		B11D63902A65301600E3190F /* LibMeta */ = {
+		B11D63902A65301600E3190F /* RiffMeta */ = {
 			isa = PBXGroup;
 			children = (
 				B11D63912A65301F00E3190F /* Declare.h */,
 				B11D63932A65308A00E3190F /* Traits.h */,
 			);
-			path = LibMeta;
+			path = RiffMeta;
 			sourceTree = "<group>";
 		};
 		B16ED1C52A6423C0009D0260 = {

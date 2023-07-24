@@ -11,7 +11,7 @@
 
 #pragma once
 
-#include <LibMeta/Traits.h>
+#include <RiffMeta/Traits.h>
 #include "Macros.h"
 #include "RiffStd.h"
 
@@ -120,7 +120,7 @@ namespace Include
     template <typename Lhs, typename Rhs = Lhs>
     concept Comparable = requires(Lhs const &lhs, Rhs const &rhs) 
     {
-        { lhs.cmp(rhs) } -> LibMeta::Same<Order>;
+        { lhs.cmp(rhs) } -> RiffMeta::Same<Order>;
     };
 
     /**
@@ -130,9 +130,9 @@ namespace Include
     template <typename Lhs, typename Rhs = Lhs>
     concept ComparaisonOperator = requires(Lhs const &lhs, Rhs const &rhs) 
     {
-        { lhs < rhs } -> LibMeta::Same<bool>;
-        { lhs > rhs } -> LibMeta::Same<bool>;
-        { lhs == rhs } -> LibMeta::Same<bool>;
+        { lhs < rhs } -> RiffMeta::Same<bool>;
+        { lhs > rhs } -> RiffMeta::Same<bool>;
+        { lhs == rhs } -> RiffMeta::Same<bool>;
     };
     
     /**
